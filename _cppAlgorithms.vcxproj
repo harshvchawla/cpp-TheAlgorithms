@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{92D470AD-F258-4B52-B12E-F3A91B9063F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="backtracking\graph_coloring.cpp" />
+    <ClCompile Include="backtracking\knight_tour.cpp" />
+    <ClCompile Include="backtracking\minimax.cpp" />
+    <ClCompile Include="backtracking\nqueen_print_all_solutions.cpp" />
+    <ClCompile Include="backtracking\n_queens.cpp" />
+    <ClCompile Include="backtracking\n_queens_all_solution_optimised.cpp" />
+    <ClCompile Include="backtracking\rat_maze.cpp" />
+    <ClCompile Include="backtracking\sudoku_solve.cpp" />
+    <ClCompile Include="computer_oriented_statistical_methods\Bisection_method.CPP" />
+    <ClCompile Include="computer_oriented_statistical_methods\false-position.cpp" />
+    <ClCompile Include="computer_oriented_statistical_methods\Gaussian_elimination.cpp" />
+    <ClCompile Include="computer_oriented_statistical_methods\Newton_Raphson.CPP" />
+    <ClCompile Include="computer_oriented_statistical_methods\ordinary_least_squares_regressor.cpp" />
+    <ClCompile Include="computer_oriented_statistical_methods\Secant_method.CPP" />
+    <ClCompile Include="computer_oriented_statistical_methods\successive_approximation.CPP" />
+    <ClCompile Include="data_structure\AVLtree.cpp" />
+    <ClCompile Include="data_structure\Binary Search Tree.cpp" />
+    <ClCompile Include="data_structure\Binaryheap.cpp" />
+    <ClCompile Include="data_structure\circular_Queue_using_Linked_List.cpp" />
+    <ClCompile Include="data_structure\cll\cll.cpp" />
+    <ClCompile Include="data_structure\cll\main_cll.cpp" />
+    <ClCompile Include="data_structure\disjoint_set.cpp" />
+    <ClCompile Include="data_structure\doubly_linked_list.cpp" />
+    <ClCompile Include="data_structure\linkedList_implentation_usingArray.cpp" />
+    <ClCompile Include="data_structure\linked_list.cpp" />
+    <ClCompile Include="data_structure\List Array.cpp" />
+    <ClCompile Include="data_structure\MorrisInorder.cpp" />
+    <ClCompile Include="data_structure\Queue Using Array.cpp" />
+    <ClCompile Include="data_structure\Queue Using Linked List.cpp" />
+    <ClCompile Include="data_structure\queue\queue.cpp" />
+    <ClCompile Include="data_structure\queue\test_queue.cpp" />
+    <ClCompile Include="data_structure\queue_using_array.cpp" />
+    <ClCompile Include="data_structure\queue_using_linkedlist.cpp" />
+    <ClCompile Include="data_structure\Stack Using Array.cpp" />
+    <ClCompile Include="data_structure\Stack Using Linked List.cpp" />
+    <ClCompile Include="data_structure\stk\main.cpp" />
+    <ClCompile Include="data_structure\stk\stack.cpp" />
+    <ClCompile Include="data_structure\stk\test_stack.cpp" />
+    <ClCompile Include="data_structure\Tree.cpp" />
+    <ClCompile Include="data_structure\trie_modern.cpp" />
+    <ClCompile Include="data_structure\trie_tree.cpp" />
+    <ClCompile Include="dynamic_programming\0-1 Knapsack.cpp" />
+    <ClCompile Include="dynamic_programming\armstrong_number.cpp" />
+    <ClCompile Include="dynamic_programming\Bellman-Ford.cpp" />
+    <ClCompile Include="dynamic_programming\Catalan-Numbers.cpp" />
+    <ClCompile Include="dynamic_programming\Coin-Change.cpp" />
+    <ClCompile Include="dynamic_programming\Cut Rod.cpp" />
+    <ClCompile Include="dynamic_programming\Edit Distance.cpp" />
+    <ClCompile Include="dynamic_programming\Egg-Dropping-Puzzle.cpp" />
+    <ClCompile Include="dynamic_programming\Fibonacci_Bottom_Up.cpp" />
+    <ClCompile Include="dynamic_programming\Fibonacci_Top_Down.cpp" />
+    <ClCompile Include="dynamic_programming\Floyd-Warshall.cpp" />
+    <ClCompile Include="dynamic_programming\kadane.cpp" />
+    <ClCompile Include="dynamic_programming\Longest Common Subsequence.cpp" />
+    <ClCompile Include="dynamic_programming\Longest Increasing Subsequence (nlogn).cpp" />
+    <ClCompile Include="dynamic_programming\Longest Increasing Subsequence.cpp" />
+    <ClCompile Include="dynamic_programming\longest_common_string.cpp" />
+    <ClCompile Include="dynamic_programming\Matrix-Chain-Multiplication.cpp" />
+    <ClCompile Include="dynamic_programming\searching_of_element_in_dynamic_array.cpp" />
+    <ClCompile Include="dynamic_programming\tree_height.cpp" />
+    <ClCompile Include="geometry\line_segment_intersection.cpp" />
+    <ClCompile Include="graph\BFS.cpp" />
+    <ClCompile Include="graph\bridge_finding_with_tarjan_algorithm.cpp" />
+    <ClCompile Include="graph\connected_components.cpp" />
+    <ClCompile Include="graph\connected_components_with_dsu.cpp" />
+    <ClCompile Include="graph\DFS.cpp" />
+    <ClCompile Include="graph\DFS_with_stack.cc" />
+    <ClCompile Include="graph\Dijkstra.cpp" />
+    <ClCompile Include="graph\kosaraju.cpp" />
+    <ClCompile Include="graph\Kruskal.cpp" />
+    <ClCompile Include="graph\lca.cpp" />
+    <ClCompile Include="graph\max_flow_with_ford_fulkerson_and_edmond_karp_algo.cpp" />
+    <ClCompile Include="graph\prim.cpp" />
+    <ClCompile Include="graph\Topological-Sort.cpp" />
+    <ClCompile Include="graph\topological_sort_by_kahns_algo.cpp" />
+    <ClCompile Include="greedy_algorithms\Dijkstra.cpp" />
+    <ClCompile Include="greedy_algorithms\huffman.cpp" />
+    <ClCompile Include="greedy_algorithms\Knapsack.cpp" />
+    <ClCompile Include="greedy_algorithms\Kruskals Minimum Spanning Tree.cpp" />
+    <ClCompile Include="greedy_algorithms\Prims Minimum Spanning Tree.cpp" />
+    <ClCompile Include="hashing\Chaining.cpp" />
+    <ClCompile Include="hashing\double_hash_hash_table.cpp" />
+    <ClCompile Include="hashing\linear_probing_hash_table.cpp" />
+    <ClCompile Include="hashing\quadratic_probing_hash_table.cpp" />
+    <ClCompile Include="math\binary_exponent.cpp" />
+    <ClCompile Include="math\double_factorial.cpp" />
+    <ClCompile Include="math\eulers_totient_function.cpp" />
+    <ClCompile Include="math\extended_euclid_algorithm.cpp" />
+    <ClCompile Include="math\factorial.cpp" />
+    <ClCompile Include="math\fast_power.cpp" />
+    <ClCompile Include="math\fibonacci.cpp" />
+    <ClCompile Include="math\greatest_common_divisor.cpp" />
+    <ClCompile Include="math\greatest_common_divisor_euclidean.cpp" />
+    <ClCompile Include="math\modular_inverse_fermat_little_theorem.cpp" />
+    <ClCompile Include="math\number_of_positive_divisors.cpp" />
+    <ClCompile Include="math\power_for_huge_numbers.cpp" />
+    <ClCompile Include="math\primes_up_to_10^8.cpp" />
+    <ClCompile Include="math\prime_factorization.cpp" />
+    <ClCompile Include="math\prime_numbers.cpp" />
+    <ClCompile Include="math\sieve_of_eratosthenes.cpp" />
+    <ClCompile Include="math\sqrt_double.cpp" />
+    <ClCompile Include="operations_on_datastructures\Array Left Rotation.cpp" />
+    <ClCompile Include="operations_on_datastructures\Array Right Rotation.cpp" />
+    <ClCompile Include="operations_on_datastructures\Circular Linked List.cpp" />
+    <ClCompile Include="operations_on_datastructures\Circular Queue Using Array.cpp" />
+    <ClCompile Include="operations_on_datastructures\get_size_of_linked_list.cpp" />
+    <ClCompile Include="operations_on_datastructures\Intersection_of_2_arrays.cpp" />
+    <ClCompile Include="operations_on_datastructures\Reverse a Linked List using Recusion.cpp" />
+    <ClCompile Include="operations_on_datastructures\selectionSortLinkedList.cpp" />
+    <ClCompile Include="operations_on_datastructures\Union_of_2_arrays.cpp" />
+    <ClCompile Include="others\Buzz_number.cpp" />
+    <ClCompile Include="others\Decimal To Binary.cpp" />
+    <ClCompile Include="others\Decimal To Hexadecimal .cpp" />
+    <ClCompile Include="others\Decimal to Roman Numeral.cpp" />
+    <ClCompile Include="others\fast_interger_input.cpp" />
+    <ClCompile Include="others\fibonacci.cpp" />
+    <ClCompile Include="others\GCD_of_n_numbers.cpp" />
+    <ClCompile Include="others\happy_number.cpp" />
+    <ClCompile Include="others\matrix_exponentiation.cpp" />
+    <ClCompile Include="others\measure_time_elapsed.cpp" />
+    <ClCompile Include="others\Palindromeofnumber.cpp" />
+    <ClCompile Include="others\Paranthesis Matching.cpp" />
+    <ClCompile Include="others\pascal_triangle.cpp" />
+    <ClCompile Include="others\Primality Test.cpp" />
+    <ClCompile Include="others\sieve_of_Eratosthenes.cpp" />
+    <ClCompile Include="others\smallest-circle.cpp" />
+    <ClCompile Include="others\Sparse matrix.cpp" />
+    <ClCompile Include="others\spiral_print.cpp" />
+    <ClCompile Include="others\stairs_pattern.cpp" />
+    <ClCompile Include="others\Strassen Matrix Multiplication.cpp" />
+    <ClCompile Include="others\String Fibonacci.cpp" />
+    <ClCompile Include="others\Tower of Hanoi.cpp" />
+    <ClCompile Include="others\vector_important_functions.cpp" />
+    <ClCompile Include="probability\addition_rule.cpp" />
+    <ClCompile Include="probability\bayes_theorem.cpp" />
+    <ClCompile Include="probability\binomial_dist.cpp" />
+    <ClCompile Include="probability\poisson_dist.cpp" />
+    <ClCompile Include="range_queries\bit.cpp" />
+    <ClCompile Include="range_queries\FenwickTree.cpp" />
+    <ClCompile Include="range_queries\MO.cpp" />
+    <ClCompile Include="range_queries\segTree.cpp" />
+    <ClCompile Include="search\binary_search.cpp" />
+    <ClCompile Include="search\exponential_search.cpp" />
+    <ClCompile Include="search\hash_search.cpp" />
+    <ClCompile Include="search\Interpolation Search.cpp" />
+    <ClCompile Include="search\interpolation_search.cpp" />
+    <ClCompile Include="search\jump_search.cpp" />
+    <ClCompile Include="search\Linear Search.cpp" />
+    <ClCompile Include="search\median_search.cpp" />
+    <ClCompile Include="search\searching.cpp" />
+    <ClCompile Include="search\ternary_search.cpp" />
+    <ClCompile Include="sorting\BeadSort.cpp" />
+    <ClCompile Include="sorting\BitonicSort.cpp" />
+    <ClCompile Include="sorting\Bubble Sort.cpp" />
+    <ClCompile Include="sorting\bucketSort.cpp" />
+    <ClCompile Include="sorting\CocktailSelectionSort.cpp" />
+    <ClCompile Include="sorting\combsort.cpp" />
+    <ClCompile Include="sorting\CountingSortString.cpp" />
+    <ClCompile Include="sorting\Counting_Sort.cpp" />
+    <ClCompile Include="sorting\heap_sort.cpp" />
+    <ClCompile Include="sorting\Insertion Sort.cpp" />
+    <ClCompile Include="sorting\library_sort.cpp" />
+    <ClCompile Include="sorting\Merge Sort.cpp" />
+    <ClCompile Include="sorting\non_recursive_merge_sort.cpp" />
+    <ClCompile Include="sorting\NumericStringSort.cpp" />
+    <ClCompile Include="sorting\OddEven Sort.cpp" />
+    <ClCompile Include="sorting\quick_sort.cpp" />
+    <ClCompile Include="sorting\Radix Sort.cpp" />
+    <ClCompile Include="sorting\Selection Sort.cpp" />
+    <ClCompile Include="sorting\Shell Sort.cpp" />
+    <ClCompile Include="sorting\Slow Sort.cpp" />
+    <ClCompile Include="sorting\swap_sort.cpp" />
+    <ClCompile Include="sorting\Tim Sort.cpp" />
+    <ClCompile Include="strings\brute_force_string_searching.cpp" />
+    <ClCompile Include="strings\knuth_morris_pratt.cpp" />
+    <ClCompile Include="strings\rabin_karp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data_structure\cll\cll.h" />
+    <ClInclude Include="data_structure\queue\queue.h" />
+    <ClInclude Include="data_structure\stk\stack.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
